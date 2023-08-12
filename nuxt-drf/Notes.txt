@@ -1,0 +1,8 @@
+This project is for drf and nuxt3 project
+1. code-w-hr ( blog, courses )
+
+
+
+start from
+1. add post app to installed app
+2. add category add to installed app
