@@ -19,6 +19,18 @@
                         class="bg-indigo-500 hover:bg-indigo-600 text-white rounded-full font-medium py-2 px-4">
                         posts
                     </NuxtLink>
+                    <NuxtLink :to="{ name: 'category-list' }"
+                        class="bg-indigo-500 hover:bg-indigo-600 text-white rounded-full font-medium py-2 px-4">
+                        category-list
+                    </NuxtLink>
+                    <NuxtLink :to="{ name: 'category-list-category' }"
+                        class="bg-indigo-500 hover:bg-indigo-600 text-white rounded-full font-medium py-2 px-4">
+                        Category
+                    </NuxtLink>
+                    <NuxtLink :to="{ name: 'category-list-category-slug', params: { slug: 111 } }"
+                        class="bg-indigo-500 hover:bg-indigo-600 text-white rounded-full font-medium py-2 px-4">
+                        Category Single
+                    </NuxtLink>
                 </nav>
                 <button
                     class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Button
