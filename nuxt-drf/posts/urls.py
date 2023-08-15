@@ -2,7 +2,7 @@ from django.urls import path
 
 from .views import PostDetailAPIView, PostListAPIView
 
-app_name = "post"
+app_name = "posts"
 
 urlpatterns = [
     path("posts/", PostListAPIView.as_view(), name="posts"),

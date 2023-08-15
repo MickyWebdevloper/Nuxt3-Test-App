@@ -9,20 +9,11 @@ from .models import Post
 
 
 class PostSerializer(ModelSerializer):
-    detail_url = HyperlinkedIdentityField(view_name="post:post-detail", lookup_field="slug")
+    detail_url = HyperlinkedIdentityField(view_name="posts:post-detail", lookup_field="slug")
 
     class Meta:
         model = Post
-        fields = [
-            "id",
-            "detail_url",
-            "title",
-            "description",
-            "slug",
-            "created_at",
-            "updated_at"
-            # "blog_post_image",
-        ]
+        fields = ["id", "detail_url", "title", "description", "slug", "created_at", "updated_at"]
 
     def category(self, obj):
         return obj.category.name

@@ -29,7 +29,7 @@ INSTALLED_APPS = [
     # "mptt",
     # "blog",
     # "course",
-    "post",
+    "posts",
     "rest_framework",
     "corsheaders",
 ]

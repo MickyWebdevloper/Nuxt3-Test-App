@@ -8,7 +8,7 @@ urlpatterns = [
     # path("", include("store.urls", namespace="store")),
     # path("", include("blog.urls", namespace="blog")),
     # path("", include("course.urls", namespace="post")),
-    path("api/", include("post.urls", namespace="post")),
+    path("api/", include("posts.urls", namespace="posts")),
     # path("api/", include("tutorial.urls", namespace="tutorial")),
 ]
 
